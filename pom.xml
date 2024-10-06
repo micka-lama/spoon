@@ -247,7 +247,7 @@
             </excludes>
             <importOrder>
               <wildcardsLast>true</wildcardsLast>
-              <order>,javax,java,\#</order>
+              <order>,\#javax|\#java,\#</order>
             </importOrder>
             <removeUnusedImports />
             <trimTrailingWhitespace/>
