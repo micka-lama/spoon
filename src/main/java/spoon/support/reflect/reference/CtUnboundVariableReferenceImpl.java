@@ -9,6 +9,7 @@ package spoon.support.reflect.reference;
 
 import java.lang.annotation.Annotation;
 import java.util.List;
+
 import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.reference.CtUnboundVariableReference;

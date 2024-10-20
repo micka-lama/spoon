@@ -1,11 +1,17 @@
 package spoon.support.compiler.jdt;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.eclipse.jdt.internal.compiler.CompilationResult;
 import org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration;
 import org.eclipse.jdt.internal.compiler.ast.ImportReference;
@@ -16,6 +22,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+
 import spoon.compiler.Environment;
 import spoon.experimental.CtUnresolvedImport;
 import spoon.reflect.cu.CompilationUnit;
@@ -30,11 +37,6 @@ import spoon.reflect.visitor.CtAbstractImportVisitor;
 import spoon.reflect.visitor.CtImportVisitor;
 import spoon.support.StandardEnvironment;
 import spoon.support.reflect.cu.CompilationUnitImpl;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 public class JDTImportBuilderTest {
 

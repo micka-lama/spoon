@@ -18,6 +18,7 @@ package spoon.test.reflect.visitor;
 
 
 import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import spoon.reflect.declaration.CtEnum;
 import spoon.reflect.factory.TypeFactory;

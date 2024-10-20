@@ -7,7 +7,6 @@
  */
 package spoon.reflect.code;
 
-import java.util.List;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.declaration.CtClass;
@@ -15,6 +14,8 @@ import spoon.reflect.reference.CtActualTypeContainer;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.DerivedProperty;
+
+import java.util.List;
 
 import static spoon.reflect.path.CtRole.NESTED_TYPE;
 import static spoon.reflect.path.CtRole.TYPE_ARGUMENT;

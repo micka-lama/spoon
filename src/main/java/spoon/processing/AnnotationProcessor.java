@@ -9,6 +9,7 @@ package spoon.processing;
 
 import java.lang.annotation.Annotation;
 import java.util.Set;
+
 import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtElement;
 

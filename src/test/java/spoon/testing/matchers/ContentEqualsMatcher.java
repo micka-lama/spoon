@@ -1,9 +1,10 @@
 package spoon.testing.matchers;
 
-import java.util.Collection;
-import java.util.HashSet;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
+
+import java.util.Collection;
+import java.util.HashSet;
 
 /**
  * A matcher that compares the contents of two collections.

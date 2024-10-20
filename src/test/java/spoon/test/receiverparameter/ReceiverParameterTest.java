@@ -1,6 +1,7 @@
 package spoon.test.receiverparameter;
 
 import java.util.List;
+
 import spoon.reflect.CtModel;
 import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.declaration.CtElement;

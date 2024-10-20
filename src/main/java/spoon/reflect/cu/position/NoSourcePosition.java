@@ -7,10 +7,11 @@
  */
 package spoon.reflect.cu.position;
 
-import java.io.File;
 import spoon.reflect.cu.CompilationUnit;
 import spoon.reflect.cu.SourcePosition;
 import spoon.support.reflect.cu.CompilationUnitImpl;
+
+import java.io.File;
 
 /**
  * This class represents the position of a program element in a source file.

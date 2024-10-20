@@ -17,14 +17,6 @@
 package spoon.test.api;
 
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Consumer;
 import spoon.metamodel.MetamodelConcept;
 import spoon.reflect.code.CtForEach;
 import spoon.reflect.declaration.CtClass;
@@ -36,6 +28,15 @@ import spoon.reflect.meta.impl.RoleHandlerHelper;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.visitor.CtScanner;
 import spoon.support.reflect.code.CtForEachImpl;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * This class enables to reason on the Spoon metamodel directly

@@ -22,3 +22,4 @@ public abstract class SubFactory {
 		this.factory = factory;
 	}
 }
+

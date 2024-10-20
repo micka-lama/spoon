@@ -16,10 +16,6 @@
  */
 package spoon.test.replace;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
 import spoon.SpoonException;
@@ -42,6 +38,11 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.CtScanner;
 import spoon.reflect.visitor.CtVisitable;
 import spoon.reflect.visitor.filter.SameFilter;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
@@ -69,7 +70,7 @@ public class ReplaceParametrizedTest<T extends CtVisitable> {
 
 	private void testContract(MetamodelConcept typeToTest) {
 		List<String> problems = new ArrayList<>();
-
+		
 		// contract: all elements are replaceable wherever they are in the model
 		// this test puts them at all possible locations
 		CtType<?> toTest = typeToTest.getMetamodelInterface();
@@ -132,11 +133,11 @@ public class ReplaceParametrizedTest<T extends CtVisitable> {
 					}
 				}
 				continue;
-			}
+			} 
 
 			// we invoke the setter
 			invokeSetter(rh, receiver, argument);
-
+				
 			// contract: a property setter sets properties that are visitable by a scanner
 			CtElement finalArgument = argument;
 			class Scanner extends CtScanner {
@@ -156,10 +157,10 @@ public class ReplaceParametrizedTest<T extends CtVisitable> {
 			Scanner s = new Scanner();
 			receiver.accept(s);
 			assertTrue(s.found, "Settable field " + mmField.toString() + " should set value.\n" + getReport(problems, typeToTest));
-
+			
 			// contract: a property getter on the same role can be used to get the value back
 			assertSame(argument, invokeGetter(rh, receiver));
-
+			
 			final CtElement argument2 = argument.clone();
 			assertNotSame(argument, argument2);
 
@@ -173,7 +174,7 @@ public class ReplaceParametrizedTest<T extends CtVisitable> {
 			fail(getReport(problems, typeToTest));
 		}
 	}
-
+	
 	private String getReport(List<String> problems, MetamodelConcept typeToTest) {
 		if (!problems.isEmpty()) {
 			StringBuilder report = new StringBuilder();

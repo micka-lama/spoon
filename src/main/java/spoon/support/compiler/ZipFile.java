@@ -7,6 +7,11 @@
  */
 package spoon.support.compiler;
 
+import spoon.SpoonException;
+import spoon.compiler.SpoonFile;
+import spoon.compiler.SpoonFolder;
+import spoon.support.Internal;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -15,10 +20,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Objects;
-import spoon.SpoonException;
-import spoon.compiler.SpoonFile;
-import spoon.compiler.SpoonFolder;
-import spoon.support.Internal;
 
 public class ZipFile implements SpoonFile {
 

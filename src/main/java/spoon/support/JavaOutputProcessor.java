@@ -7,15 +7,6 @@
  */
 package spoon.support;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.nio.charset.Charset;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import spoon.Launcher;
 import spoon.SpoonException;
 import spoon.compiler.Environment;
@@ -29,6 +20,16 @@ import spoon.reflect.declaration.CtPackage;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.visitor.PrettyPrinter;
 import spoon.support.compiler.SpoonProgress;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.nio.charset.Charset;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * A processor that generates compilable Java source files from the meta-model.

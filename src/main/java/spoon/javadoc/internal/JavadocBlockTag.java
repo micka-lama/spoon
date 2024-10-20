@@ -14,8 +14,9 @@
  */
 package spoon.javadoc.internal;
 
-import java.io.Serializable;
 import spoon.reflect.code.CtJavaDocTag;
+
+import java.io.Serializable;
 
 /**
 * A block tag.

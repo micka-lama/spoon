@@ -7,14 +7,15 @@
  */
 package spoon.reflect.declaration;
 
-import java.util.Set;
-import spoon.reflect.annotations.PropertyGetter;
-import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.reference.CtPackageReference;
 import spoon.support.DerivedProperty;
+import spoon.reflect.annotations.PropertyGetter;
+import spoon.reflect.annotations.PropertySetter;
 
-import static spoon.reflect.path.CtRole.CONTAINED_TYPE;
+import java.util.Set;
+
 import static spoon.reflect.path.CtRole.SUB_PACKAGE;
+import static spoon.reflect.path.CtRole.CONTAINED_TYPE;
 
 /**
  * This element defines a package declaration. The packages are represented by a

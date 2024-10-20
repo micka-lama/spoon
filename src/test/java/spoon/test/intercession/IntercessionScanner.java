@@ -16,10 +16,6 @@
  */
 package spoon.test.intercession;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
 import spoon.reflect.code.CtConstructorCall;
 import spoon.reflect.code.CtThrow;
 import spoon.reflect.declaration.CtElement;
@@ -27,6 +23,11 @@ import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.factory.Factory;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.CtScanner;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 
 public abstract class IntercessionScanner extends CtScanner {
 	protected final Factory factory;

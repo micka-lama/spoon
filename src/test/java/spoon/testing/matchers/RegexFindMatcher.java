@@ -1,8 +1,9 @@
 package spoon.testing.matchers;
 
-import java.util.regex.Pattern;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
+
+import java.util.regex.Pattern;
 
 /**
  * A matcher that checks for a regex pattern in a string.

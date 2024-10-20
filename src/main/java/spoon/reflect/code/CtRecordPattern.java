@@ -7,12 +7,13 @@
  */
 package spoon.reflect.code;
 
-import java.util.List;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.UnsettableProperty;
+
+import java.util.List;
 
 // TODO (440) metamodel
 

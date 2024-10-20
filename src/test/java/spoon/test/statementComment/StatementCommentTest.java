@@ -39,12 +39,11 @@ import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.factory.Factory;
 import spoon.support.reflect.code.CtCatchImpl;
 import spoon.testing.utils.LineSeparatorExtension;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StatementCommentTest {
 	String EOL = "\n";
-
+		
 	private Factory getSpoonFactory() {
 		final Launcher launcher = new Launcher();
 		launcher.run(new String[]{
@@ -54,7 +53,7 @@ public class StatementCommentTest {
 		});
 		return launcher.getFactory();
 	}
-
+	
 	private Launcher setUpTest() {
 		Launcher launcher = new Launcher();
 		launcher.addInputResource("./src/test/java/spoon/test/statementComment/testclasses/AllStmtExtensions.java");
@@ -62,7 +61,7 @@ public class StatementCommentTest {
 		launcher.run();
 		return launcher;
 	}
-
+	
 	@Test
 	public void testAssertStatement(){
 		// contract: test assert statement can be singly commented out
@@ -88,7 +87,7 @@ public class StatementCommentTest {
 		CtComment assignmentAsComment = ((CtComment) m1.getBody().getStatement(2));
 		assertEquals(assignmentAsComment.getContent(), "r = 20;");
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testBlockStatementWithinBody(){
@@ -101,11 +100,11 @@ public class StatementCommentTest {
 		blockWithinBody.comment();
 		assertTrue(m1.getBody().getStatement(4) instanceof CtComment);
 		CtComment blockAsComment = (CtComment) m1.getBody().getStatement(4);
-		assertEquals("{" + EOL  +
-				"int j = 10;" + EOL  +
+		assertEquals("{" + EOL  + 
+				"int j = 10;" + EOL  + 
 				"}", blockAsComment.getContent());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testMethodBodyEmptyStatement(){
@@ -117,7 +116,7 @@ public class StatementCommentTest {
 		assertEquals("{" + EOL +
 				"}", m2.getBody().prettyprint());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testMethodBodyNonEmptyStatement(){
@@ -129,18 +128,18 @@ public class StatementCommentTest {
 		for(CtStatement stmt: m1.getBody().getStatements()) {
 			assertTrue(stmt instanceof CtComment);
 		}
-		assertEquals("{" + EOL  +
-				"    // assert 1 == 5;" + EOL  +
-				"    // int r = 10;" + EOL  +
-				"    // r = 20;" + EOL  +
-				"    // java.lang.String s = \"This is a new String!\";" + EOL  +
-				"    /* {" + EOL  +
-				"    int j = 10;" + EOL  +
-				"    }" + EOL  +
-				"     */" + EOL  +
+		assertEquals("{" + EOL  + 
+				"    // assert 1 == 5;" + EOL  + 
+				"    // int r = 10;" + EOL  + 
+				"    // r = 20;" + EOL  + 
+				"    // java.lang.String s = \"This is a new String!\";" + EOL  + 
+				"    /* {" + EOL  + 
+				"    int j = 10;" + EOL  + 
+				"    }" + EOL  + 
+				"     */" + EOL  + 
 				"}", m1.getBody().prettyprint());
 	}
-
+	
 	public void testCaseStatement(){
 		// contract: test an isolated case statement commented out leads to UnsupportedOperationException
 		Launcher launcher = setUpTest();
@@ -172,7 +171,7 @@ public class StatementCommentTest {
 		assertTrue(m6.getBody().getStatement(3) instanceof CtComment);
 		assertEquals(((CtComment) m6.getBody().getStatement(3)).getContent(), initialContent);
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testIfStatement(){
@@ -185,10 +184,10 @@ public class StatementCommentTest {
 		ifStmt.comment();
 		assertTrue(m4.getBody().getStatement(0) instanceof CtComment);
 		CtComment ifAsComment = (CtComment) m4.getBody().getStatement(0);
-		assertEquals("if (5 > 6) {" + EOL  +
-				"java.lang.System.out.println(\"Impossible!\");" + EOL  +
-				"} else {" + EOL  +
-				"java.lang.System.out.println(\"Seems right...\");" + EOL  +
+		assertEquals("if (5 > 6) {" + EOL  + 
+				"java.lang.System.out.println(\"Impossible!\");" + EOL  + 
+				"} else {" + EOL  + 
+				"java.lang.System.out.println(\"Seems right...\");" + EOL  + 
 				"}", ifAsComment.getContent());
 	}
 
@@ -205,7 +204,7 @@ public class StatementCommentTest {
 		CtComment comm = (CtComment) m3.getBody().getStatement(1);
 		assertEquals("int r = 30;", comm.getContent());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testLoopStatement(){
@@ -217,11 +216,11 @@ public class StatementCommentTest {
 		CtLoop loopAsStmt = m6.getBody().getStatement(2);
 		loopAsStmt.comment();
 		assertTrue(m6.getBody().getStatement(2) instanceof CtComment);
-		assertEquals("for (int i = 0; i < 10; ++i) {" + EOL  +
-				"java.lang.System.out.println(i);" + EOL  +
+		assertEquals("for (int i = 0; i < 10; ++i) {" + EOL  + 
+				"java.lang.System.out.println(i);" + EOL  + 
 				"}", ((CtComment) m6.getBody().getStatement(2)).getContent());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testSwitchStatement(){
@@ -237,12 +236,12 @@ public class StatementCommentTest {
 		assertEquals("switch (t) {" + EOL +
 				"case 1 :" + EOL +
 				"java.lang.System.out.println(\"1\");" + EOL +
-				"break;" + EOL +
-				"default :" + EOL +
-				"java.lang.System.out.println(\"None\");" + EOL +
+				"break;" + EOL + 
+				"default :" + EOL + 
+				"java.lang.System.out.println(\"None\");" + EOL + 
 				"}", switchAsComment.getContent());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testSynchronousStatement(){
@@ -254,11 +253,11 @@ public class StatementCommentTest {
 		CtSynchronized synchronizedAsStmt = (CtSynchronized) m6.getBody().getStatement(1);
 		synchronizedAsStmt.comment();
 		assertTrue(m6.getBody().getStatement(1) instanceof CtComment);
-		assertEquals("synchronized(obj) {" + EOL  +
-				"java.lang.System.out.println(\"Executing\");" + EOL  +
+		assertEquals("synchronized(obj) {" + EOL  + 
+				"java.lang.System.out.println(\"Executing\");" + EOL  + 
 				"}", ((CtComment) m6.getBody().getStatement(1)).getContent());
 	}
-
+	
 	@Test
 	@ExtendWith(LineSeparatorExtension.class)
 	public void testTryStatement(){
@@ -271,13 +270,13 @@ public class StatementCommentTest {
 		tryStmt.comment();
 		assertTrue(m3.getBody().getStatement(0) instanceof CtComment);
 		CtComment tryAsComment = m3.getBody().getStatement(0);
-		assertEquals("try {" + EOL  +
-				"throw new java.lang.Exception();" + EOL  +
-				"} catch (java.lang.Exception e) {" + EOL  +
-				"java.lang.System.out.println(e);" + EOL  +
+		assertEquals("try {" + EOL  + 
+				"throw new java.lang.Exception();" + EOL  + 
+				"} catch (java.lang.Exception e) {" + EOL  + 
+				"java.lang.System.out.println(e);" + EOL  + 
 				"}", tryAsComment.getContent());
 	}
-
+	
 
 	public void testCatchStatementFail(){
 		// contract: test commenting of isolated catch leads to UnsupportedOperationException exception
@@ -293,7 +292,7 @@ public class StatementCommentTest {
 		}
 	});
 	}
-
+	
 	@Test
 	public void testUnaryOperatorStatement(){
 		// contract: test commenting out of UnaryOperator statement

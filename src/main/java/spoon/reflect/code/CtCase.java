@@ -7,11 +7,12 @@
  */
 package spoon.reflect.code;
 
-import java.util.List;
 import org.jspecify.annotations.Nullable;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.path.CtRole;
+
+import java.util.List;
 
 import static spoon.reflect.path.CtRole.CASE_KIND;
 import static spoon.reflect.path.CtRole.EXPRESSION;

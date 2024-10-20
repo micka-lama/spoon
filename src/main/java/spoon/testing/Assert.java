@@ -7,9 +7,10 @@
  */
 package spoon.testing;
 
-import java.io.File;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtPackage;
+
+import java.io.File;
 
 import static spoon.testing.utils.Check.assertExists;
 import static spoon.testing.utils.Check.assertNotNull;

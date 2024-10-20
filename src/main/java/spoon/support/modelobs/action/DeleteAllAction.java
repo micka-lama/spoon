@@ -7,9 +7,10 @@
  */
 package spoon.support.modelobs.action;
 
+import spoon.support.modelobs.context.Context;
+
 import java.util.Collection;
 import java.util.Map;
-import spoon.support.modelobs.context.Context;
 
 /**
  * defines the delete all action.

@@ -7,8 +7,6 @@
  */
 package spoon.reflect.declaration;
 
-import java.util.List;
-import java.util.Set;
 import org.jspecify.annotations.Nullable;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
@@ -18,6 +16,9 @@ import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.DerivedProperty;
+
+import java.util.List;
+import java.util.Set;
 
 import static spoon.reflect.path.CtRole.PARAMETER;
 import static spoon.reflect.path.CtRole.THROWN;

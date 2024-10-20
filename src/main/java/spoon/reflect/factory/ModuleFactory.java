@@ -154,3 +154,4 @@ public class ModuleFactory extends SubFactory {
 		return factory.Core().createUsedService().setServiceType(typeReference);
 	}
 }
+

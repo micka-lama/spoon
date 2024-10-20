@@ -19,6 +19,7 @@ package spoon.test.delete;
 
 import java.lang.annotation.Annotation;
 import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import spoon.reflect.code.CtAssignment;
 import spoon.reflect.code.CtCase;

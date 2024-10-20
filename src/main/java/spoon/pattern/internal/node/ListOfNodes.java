@@ -7,8 +7,6 @@
  */
 package spoon.pattern.internal.node;
 
-import java.util.List;
-import java.util.function.BiConsumer;
 import spoon.pattern.internal.DefaultGenerator;
 import spoon.pattern.internal.ResultHolder;
 import spoon.pattern.internal.matcher.ChainOfMatchersImpl;
@@ -16,6 +14,9 @@ import spoon.pattern.internal.matcher.Matchers;
 import spoon.pattern.internal.matcher.TobeMatched;
 import spoon.pattern.internal.parameter.ParameterInfo;
 import spoon.support.util.ImmutableMap;
+
+import java.util.List;
+import java.util.function.BiConsumer;
 
 /**
  * List of {@link RootNode}s. The {@link RootNode}s are processed in same order like they were inserted in the list

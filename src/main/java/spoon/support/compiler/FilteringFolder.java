@@ -8,6 +8,7 @@
 package spoon.support.compiler;
 
 import java.util.ArrayList;
+
 import spoon.compiler.SpoonResource;
 
 /**

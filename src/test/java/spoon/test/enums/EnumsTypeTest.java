@@ -18,7 +18,9 @@ package spoon.test.enums;
 
 
 import java.util.List;
+
 import org.junit.jupiter.api.Test;
+
 import spoon.Launcher;
 import spoon.compiler.SpoonResource;
 import spoon.compiler.SpoonResourceHelper;

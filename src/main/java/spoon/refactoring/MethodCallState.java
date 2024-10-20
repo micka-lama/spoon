@@ -9,6 +9,7 @@ package spoon.refactoring;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
 import spoon.reflect.declaration.CtExecutable;
 import spoon.reflect.declaration.CtType;
 

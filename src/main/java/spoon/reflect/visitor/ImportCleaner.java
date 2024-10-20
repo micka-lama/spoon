@@ -7,16 +7,6 @@
  */
 package spoon.reflect.visitor;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
-import java.util.stream.Collectors;
 import spoon.SpoonException;
 import spoon.experimental.CtUnresolvedImport;
 import spoon.javadoc.internal.JavadocDescriptionElement;
@@ -48,6 +38,17 @@ import spoon.support.Experimental;
 import spoon.support.adaption.TypeAdaptor;
 import spoon.support.util.ModelList;
 import spoon.support.visitor.equals.EqualsVisitor;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 
 /**

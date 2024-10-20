@@ -16,7 +16,10 @@
  */
 package spoon.test.template;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
+
 import spoon.Launcher;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtClass;
@@ -24,8 +27,6 @@ import spoon.reflect.factory.Factory;
 import spoon.support.compiler.FileSystemFile;
 import spoon.test.template.testclasses.SubstituteArrayAccessTemplate;
 import spoon.test.template.testclasses.SubstituteArrayLengthTemplate;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TemplateArrayAccessTest {
 

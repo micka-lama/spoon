@@ -7,8 +7,6 @@
  */
 package spoon.support.reflect.declaration;
 
-import java.util.List;
-import java.util.Set;
 import spoon.reflect.annotations.MetamodelPropertyField;
 import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtBodyHolder;
@@ -25,6 +23,9 @@ import spoon.support.DerivedProperty;
 import spoon.support.UnsettableProperty;
 
 import static spoon.reflect.path.CtRole.DEFAULT_EXPRESSION;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * The implementation for {@link spoon.reflect.declaration.CtAnnotationMethod}.
@@ -106,3 +107,5 @@ public class CtAnnotationMethodImpl<T> extends CtMethodImpl<T> implements CtAnno
 		return (CtAnnotationMethod<T>) super.clone();
 	}
 }
+
+

@@ -7,12 +7,13 @@
  */
 package spoon.support.compiler;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.InputStream;
 import spoon.compiler.Environment;
 import spoon.compiler.SpoonFile;
 import spoon.compiler.SpoonFolder;
+
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.InputStream;
 
 public class VirtualFile implements SpoonFile {
 	public static final String VIRTUAL_FILE_NAME = "virtual_file";

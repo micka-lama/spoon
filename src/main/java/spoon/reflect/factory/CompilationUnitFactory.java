@@ -7,11 +7,6 @@
  */
 package spoon.reflect.factory;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.Map;
-import java.util.TreeMap;
 import spoon.SpoonException;
 import spoon.reflect.cu.CompilationUnit;
 import spoon.reflect.cu.position.NoSourcePosition;
@@ -20,6 +15,12 @@ import spoon.reflect.declaration.CtPackage;
 import spoon.reflect.declaration.CtType;
 import spoon.support.compiler.VirtualFile;
 import spoon.support.compiler.jdt.JDTSnippetCompiler;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * A factory to create some evaluation utilities on the Spoon metamodel.

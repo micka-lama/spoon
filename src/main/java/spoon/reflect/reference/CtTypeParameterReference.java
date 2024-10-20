@@ -7,10 +7,11 @@
  */
 package spoon.reflect.reference;
 
-import java.util.List;
 import spoon.reflect.declaration.CtTypeParameter;
 import spoon.support.DerivedProperty;
 import spoon.support.UnsettableProperty;
+
+import java.util.List;
 
 
 /**

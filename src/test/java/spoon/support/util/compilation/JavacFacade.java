@@ -1,5 +1,7 @@
 package spoon.support.util.compilation;
 
+import javax.tools.JavaCompiler;
+import javax.tools.ToolProvider;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -7,8 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import javax.tools.JavaCompiler;
-import javax.tools.ToolProvider;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

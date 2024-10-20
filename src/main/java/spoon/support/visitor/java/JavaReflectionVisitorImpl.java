@@ -22,6 +22,7 @@ import java.lang.reflect.TypeVariable;
 import java.lang.reflect.WildcardType;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.jspecify.annotations.Nullable;
 import spoon.SpoonException;
 import spoon.reflect.path.CtRole;

@@ -8,6 +8,7 @@
 package spoon.processing;
 
 import java.util.Collection;
+
 import spoon.reflect.declaration.CtElement;
 
 /**

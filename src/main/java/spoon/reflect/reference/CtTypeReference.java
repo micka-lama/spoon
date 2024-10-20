@@ -7,7 +7,6 @@
  */
 package spoon.reflect.reference;
 
-import java.util.Set;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.declaration.CtShadowable;
@@ -19,6 +18,8 @@ import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.path.CtRole;
 import spoon.support.DerivedProperty;
 import spoon.support.SpoonClassNotFoundException;
+
+import java.util.Set;
 
 import static spoon.reflect.path.CtRole.PACKAGE_REF;
 

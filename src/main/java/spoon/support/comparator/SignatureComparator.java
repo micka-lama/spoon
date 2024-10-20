@@ -7,10 +7,11 @@
  */
 package spoon.support.comparator;
 
-import java.io.Serializable;
-import java.util.Comparator;
 import spoon.reflect.declaration.CtElement;
 import spoon.support.visitor.SignaturePrinter;
+
+import java.io.Serializable;
+import java.util.Comparator;
 
 /**
  * Compares executables (method, executable-references) based on a signature.

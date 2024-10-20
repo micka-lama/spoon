@@ -7,9 +7,10 @@
  */
 package spoon.reflect.visitor;
 
+import spoon.reflect.declaration.CtElement;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
-import spoon.reflect.declaration.CtElement;
 
 /**
  * This class defines a scanner that maintains a scanning stack for contextual

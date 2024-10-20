@@ -16,30 +16,31 @@
  */
 package spoon.test.jdtimportbuilder;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.stream.Collectors;
-import org.junit.jupiter.api.Test;
-import spoon.Launcher;
-import spoon.experimental.CtUnresolvedImport;
-import spoon.reflect.cu.CompilationUnit;
-import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtImport;
-import spoon.reflect.declaration.CtImportKind;
 import spoon.reflect.factory.Factory;
+import spoon.test.imports.testclasses.A;
 import spoon.reflect.reference.CtFieldReference;
+import spoon.test.jdtimportbuilder.testclasses.StaticImport;
+import spoon.reflect.cu.CompilationUnit;
+import spoon.reflect.declaration.CtImport;
+import spoon.test.jdtimportbuilder.testclasses.StaticImportWithInheritance;
+import spoon.reflect.declaration.CtImportKind;
+import spoon.experimental.CtUnresolvedImport;
 import spoon.reflect.reference.CtPackageReference;
 import spoon.reflect.reference.CtTypeReference;
-import spoon.test.imports.testclasses.A;
-import spoon.test.imports.testclasses.ClassWithInvocation;
+import spoon.Launcher;
+import spoon.reflect.declaration.CtClass;
 import spoon.test.jdtimportbuilder.testclasses.StarredImport;
-import spoon.test.jdtimportbuilder.testclasses.StaticImport;
-import spoon.test.jdtimportbuilder.testclasses.StaticImportWithInheritance;
+import spoon.test.imports.testclasses.ClassWithInvocation;
+import org.junit.jupiter.api.Test;
 import spoon.testing.utils.ModelTest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.stream.Collectors;
+import java.util.Set;
+import java.util.Collection;
+import java.util.Iterator;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by urli on 09/08/2017.

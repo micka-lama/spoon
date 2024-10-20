@@ -7,10 +7,6 @@
  */
 package spoon.support.reflect.code;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 import spoon.reflect.ModelElementContainerDefaultCapacities;
 import spoon.reflect.annotations.MetamodelPropertyField;
 import spoon.reflect.code.CaseKind;
@@ -23,6 +19,11 @@ import spoon.reflect.visitor.CtVisitor;
 import spoon.reflect.visitor.Filter;
 import spoon.reflect.visitor.Query;
 import spoon.support.reflect.declaration.CtElementImpl;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class CtCaseImpl<E> extends CtStatementImpl implements CtCase<E> {
 	private static final long serialVersionUID = 1L;

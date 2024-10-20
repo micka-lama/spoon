@@ -7,9 +7,6 @@
  */
 package spoon.support.visitor;
 
-import java.lang.annotation.Annotation;
-import java.util.HashSet;
-import java.util.Set;
 import spoon.reflect.code.CtFieldRead;
 import spoon.reflect.code.CtFieldWrite;
 import spoon.reflect.declaration.CtAnnotationType;
@@ -23,6 +20,10 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.CtScanner;
+
+import java.lang.annotation.Annotation;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A scanner that calculates the imports for a given model.
@@ -145,3 +146,4 @@ public class TypeReferenceScanner extends CtScanner {
 		super.visitCtClass(ctClass);
 	}
 }
+

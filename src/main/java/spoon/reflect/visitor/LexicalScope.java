@@ -7,10 +7,11 @@
  */
 package spoon.reflect.visitor;
 
-import java.util.function.Function;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtNamedElement;
 import spoon.support.Experimental;
+
+import java.util.function.Function;
 
 /**
  * Represents that a lexical scope in the language

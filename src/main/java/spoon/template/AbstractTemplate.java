@@ -8,6 +8,7 @@
 package spoon.template;
 
 import java.lang.reflect.Field;
+
 import spoon.SpoonException;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.factory.Factory;

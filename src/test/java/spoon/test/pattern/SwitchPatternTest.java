@@ -1,8 +1,5 @@
 package spoon.test.pattern;
 
-import java.nio.file.StandardCopyOption;
-import java.util.List;
-import java.util.function.Predicate;
 import org.junit.jupiter.api.Test;
 import spoon.Launcher;
 import spoon.reflect.CtModel;
@@ -18,6 +15,10 @@ import spoon.reflect.code.CtTypePattern;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 import spoon.support.compiler.VirtualFile;
+
+import java.nio.file.StandardCopyOption;
+import java.util.List;
+import java.util.function.Predicate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

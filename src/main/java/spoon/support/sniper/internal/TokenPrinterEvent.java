@@ -10,6 +10,7 @@ package spoon.support.sniper.internal;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
 import org.jspecify.annotations.Nullable;
 import spoon.reflect.code.CtComment;
 import spoon.reflect.cu.SourcePositionHolder;
@@ -76,3 +77,4 @@ public abstract class TokenPrinterEvent implements PrinterEvent {
 		return type;
 	}
 }
+

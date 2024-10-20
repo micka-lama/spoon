@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import org.apache.commons.io.FileUtils;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.BeforeAll;
@@ -44,7 +45,7 @@ public class LoopSniperJavaPrettyPrinterTest {
 		runSniperJavaPrettyPrinter("spoon/test/prettyprinter/testclasses/loop/WhileNoBraces.java");
 	}
 
-
+	
 	@Test
 	@Disabled
 	public void whileWithBraces() throws IOException {
@@ -84,3 +85,4 @@ public class LoopSniperJavaPrettyPrinterTest {
 	}
 
 }
+

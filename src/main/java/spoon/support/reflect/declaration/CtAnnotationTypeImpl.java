@@ -7,11 +7,6 @@
  */
 package spoon.support.reflect.declaration;
 
-import java.lang.annotation.Annotation;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import spoon.reflect.declaration.CtAnnotationMethod;
 import spoon.reflect.declaration.CtAnnotationType;
 import spoon.reflect.declaration.CtFormalTypeDeclarer;
@@ -22,6 +17,12 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.CtVisitor;
 import spoon.support.DerivedProperty;
 import spoon.support.UnsettableProperty;
+
+import java.lang.annotation.Annotation;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * The implementation for {@link spoon.reflect.declaration.CtAnnotationType}.

@@ -10,6 +10,7 @@ package spoon.reflect;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
 import spoon.compiler.Environment;
 import spoon.reflect.factory.Factory;
 import spoon.support.CompressionType;

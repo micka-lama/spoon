@@ -7,10 +7,6 @@
  */
 package spoon.support.reflect.declaration;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
 import spoon.SpoonException;
 import spoon.reflect.annotations.MetamodelPropertyField;
 import spoon.reflect.declaration.CtConstructor;
@@ -29,8 +25,13 @@ import spoon.reflect.reference.CtTypeParameterReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.CtVisitor;
 import spoon.support.DerivedProperty;
-import spoon.support.UnsettableProperty;
 import spoon.support.adaption.TypeAdaptor;
+import spoon.support.UnsettableProperty;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 
 import static spoon.reflect.path.CtRole.SUPER_TYPE;
 

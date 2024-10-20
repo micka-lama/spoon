@@ -17,6 +17,7 @@
 package spoon.test.ctBodyHolder;
 
 import org.junit.jupiter.api.Test;
+
 import spoon.reflect.code.CtAssignment;
 import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtBodyHolder;

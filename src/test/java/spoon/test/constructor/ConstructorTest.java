@@ -22,6 +22,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spoon.Launcher;
@@ -40,6 +41,7 @@ import spoon.test.constructor.testclasses.AClass;
 import spoon.test.constructor.testclasses.ImplicitConstructor;
 import spoon.test.constructor.testclasses.Tacos;
 import spoon.testing.utils.ModelUtils;
+
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

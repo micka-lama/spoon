@@ -9,6 +9,7 @@ package spoon.pattern;
 
 import java.util.List;
 import java.util.Map;
+
 import spoon.SpoonException;
 import spoon.reflect.declaration.CtElement;
 import spoon.support.util.ImmutableMap;

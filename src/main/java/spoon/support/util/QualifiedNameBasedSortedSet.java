@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.TreeSet;
 import java.util.stream.Stream;
+
 import spoon.reflect.declaration.CtElement;
 import spoon.support.comparator.CtLineElementComparator;
 import spoon.support.comparator.QualifiedNameComparator;

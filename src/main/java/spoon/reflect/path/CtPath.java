@@ -7,8 +7,9 @@
  */
 package spoon.reflect.path;
 
-import java.util.List;
 import spoon.reflect.declaration.CtElement;
+
+import java.util.List;
 
 /**
  * A CtPath allows to define the path to a CtElement in the Spoon model, eg ".spoon.test.path.Foo.foo#body#statement[index=0]"

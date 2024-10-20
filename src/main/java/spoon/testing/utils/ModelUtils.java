@@ -7,9 +7,6 @@
  */
 package spoon.testing.utils;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.function.Consumer;
 import spoon.Launcher;
 import spoon.SpoonModelBuilder;
 import spoon.compiler.SpoonResourceHelper;
@@ -18,6 +15,10 @@ import spoon.reflect.factory.Factory;
 import spoon.reflect.factory.FactoryImpl;
 import spoon.support.DefaultCoreFactory;
 import spoon.support.StandardEnvironment;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.function.Consumer;
 
 public final class ModelUtils {
 	private ModelUtils() {

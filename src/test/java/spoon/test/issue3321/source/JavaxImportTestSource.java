@@ -1,7 +1,9 @@
 package spoon.test.issue3321.source;
 
-import javax.validation.constraints.NotNull;
 import spoon.test.issue3321.SomeObjectDto;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 /**
  * @author Gibah Joseph
@@ -9,7 +11,7 @@ import spoon.test.issue3321.SomeObjectDto;
  * Apr, 2020
  **/
 public class JavaxImportTestSource {
-	public JavaxImportTestSource setObject(@NotNull SomeObjectDto someObjectDto) {
-		return this;
-	}
+    public JavaxImportTestSource setObject(@NotNull SomeObjectDto someObjectDto) {
+        return this;
+    }
 }

@@ -7,6 +7,7 @@
  */
 package spoon.testing.utils;
 
+import static org.junit.jupiter.api.Assertions.fail;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -17,8 +18,6 @@ import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
-
-import static org.junit.jupiter.api.Assertions.fail;
 
 
 @Retention(RetentionPolicy.RUNTIME)
@@ -47,7 +46,7 @@ public @interface GitHubIssue {
 	int issueNumber();
 
 	/*
-	 * Signals if the issue is fixed. If the issue is marked as not fixed a failing testcase is a success.
+	 * Signals if the issue is fixed. If the issue is marked as not fixed a failing testcase is a success. 
 	 */
 	boolean fixed();
 

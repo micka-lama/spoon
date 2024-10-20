@@ -7,10 +7,6 @@
  */
 package spoon.reflect.visitor;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
 import spoon.reflect.code.CtCatch;
 import spoon.reflect.code.CtFor;
 import spoon.reflect.code.CtForEach;
@@ -28,6 +24,11 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.declaration.CtVariable;
 import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.reference.CtTypeReference;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Find local variables catch, parameters, fields, super fields

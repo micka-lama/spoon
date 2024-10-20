@@ -16,7 +16,6 @@
  */
 package spoon.support.compiler.classpath;
 
-import java.io.File;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spoon.Launcher;
@@ -24,6 +23,8 @@ import spoon.SpoonModelBuilder;
 import spoon.compiler.builder.ClasspathOptions;
 import spoon.reflect.factory.Factory;
 import spoon.support.compiler.jdt.JDTBasedSpoonCompiler;
+
+import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

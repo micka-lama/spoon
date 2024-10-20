@@ -8,10 +8,11 @@
 package spoon.support.visitor.equals;
 
 
-import java.util.Collection;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.visitor.CtBiScannerDefault;
+
+import java.util.Collection;
 
 /**
  * Used to check equality between an element and another one.

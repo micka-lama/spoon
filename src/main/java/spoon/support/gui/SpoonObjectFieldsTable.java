@@ -171,3 +171,4 @@ public class SpoonObjectFieldsTable extends JFrame {
 	}
 
 }
+

@@ -7,9 +7,12 @@
  */
 package spoon.pattern;
 
+import static spoon.pattern.PatternBuilder.bodyToStatements;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
+
 import spoon.SpoonException;
 import spoon.pattern.internal.node.ForEachNode;
 import spoon.pattern.internal.node.ListOfNodes;
@@ -28,8 +31,6 @@ import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtVariableReference;
 import spoon.reflect.visitor.CtAbstractVisitor;
 import spoon.support.Experimental;
-
-import static spoon.pattern.PatternBuilder.bodyToStatements;
 
 /**
  * Builds inline statements of Pattern

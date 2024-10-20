@@ -12,6 +12,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+
 import spoon.reflect.meta.ContainerKind;
 import spoon.reflect.meta.RoleHandler;
 import spoon.reflect.path.CtRole;

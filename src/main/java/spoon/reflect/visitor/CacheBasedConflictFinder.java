@@ -10,6 +10,7 @@ package spoon.reflect.visitor;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtPackageReference;

@@ -16,14 +16,15 @@
  */
 package spoon.test;
 
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import org.apache.commons.io.FileUtils;
 import org.junit.platform.launcher.TestExecutionListener;
 import org.junit.platform.launcher.TestIdentifier;
 import org.kohsuke.MetaInfServices;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 /**
  * An execution listener maintaining a temporary directory tests can use. This is intended as an alternative to

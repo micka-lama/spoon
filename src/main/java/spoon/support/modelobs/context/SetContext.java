@@ -7,9 +7,10 @@
  */
 package spoon.support.modelobs.context;
 
-import java.util.Set;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.path.CtRole;
+
+import java.util.Set;
 
 public class SetContext extends CollectionContext<Set<?>> {
 

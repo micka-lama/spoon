@@ -7,6 +7,13 @@
  */
 package spoon.support.compiler;
 
+import org.apache.commons.io.FileUtils;
+import spoon.Launcher;
+import spoon.SpoonException;
+import spoon.compiler.SpoonFile;
+import spoon.compiler.SpoonFolder;
+import spoon.compiler.SpoonResourceHelper;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -29,12 +36,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
-import org.apache.commons.io.FileUtils;
-import spoon.Launcher;
-import spoon.SpoonException;
-import spoon.compiler.SpoonFile;
-import spoon.compiler.SpoonFolder;
-import spoon.compiler.SpoonResourceHelper;
 
 public class ZipFolder implements SpoonFolder {
 

@@ -9,6 +9,7 @@ package spoon.support.visitor;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.jspecify.annotations.Nullable;
 import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtType;

@@ -1,5 +1,8 @@
 package spoon.generating.jdt;
 
+import org.eclipse.jdt.internal.compiler.classfmt.ClassFileConstants;
+import org.eclipse.jdt.internal.compiler.lookup.ExtraCompilerModifiers;
+
 import java.io.IOException;
 import java.io.PrintStream;
 import java.lang.reflect.Field;
@@ -18,8 +21,6 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import org.eclipse.jdt.internal.compiler.classfmt.ClassFileConstants;
-import org.eclipse.jdt.internal.compiler.lookup.ExtraCompilerModifiers;
 
 /**
  * A helper class that lets you generate a markdown file with all Acc*

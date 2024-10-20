@@ -8,6 +8,7 @@
 package spoon.refactoring;
 
 import java.util.regex.Pattern;
+
 import spoon.SpoonException;
 import spoon.reflect.declaration.CtNamedElement;
 

@@ -16,9 +16,8 @@
  */
 package spoon.testing;
 
-import java.io.File;
-import java.util.List;
 import org.junit.jupiter.api.Test;
+
 import spoon.SpoonException;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtPackage;
@@ -26,6 +25,9 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.factory.Factory;
 import spoon.reflect.visitor.filter.TypeFilter;
+
+import java.io.File;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static spoon.testing.Assert.assertThat;

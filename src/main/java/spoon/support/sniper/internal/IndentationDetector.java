@@ -7,12 +7,13 @@
  */
 package spoon.support.sniper.internal;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 import org.apache.commons.lang3.tuple.Pair;
 import spoon.reflect.declaration.CtCompilationUnit;
 import spoon.reflect.path.CtRole;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Utility class for detecting the indentation style used in a compilation unit.

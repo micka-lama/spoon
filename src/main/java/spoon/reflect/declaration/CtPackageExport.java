@@ -7,12 +7,13 @@
  */
 package spoon.reflect.declaration;
 
-import java.util.List;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtModuleReference;
 import spoon.reflect.reference.CtPackageReference;
+
+import java.util.List;
 
 /**
  * Represents an exported or opened package in a Java module

@@ -7,11 +7,6 @@
  */
 package spoon.support.compiler.jdt;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.EnumSet;
-import java.util.List;
 import org.eclipse.jdt.internal.compiler.ast.ASTNode;
 import org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration;
 import org.eclipse.jdt.internal.compiler.ast.Expression;
@@ -46,8 +41,13 @@ import spoon.reflect.visitor.EarlyTerminatingScanner;
 import spoon.support.Internal;
 import spoon.support.SpoonClassNotFoundException;
 
-import static java.lang.String.format;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.EnumSet;
+import java.util.List;
 
+import static java.lang.String.format;
 import static spoon.reflect.ModelElementContainerDefaultCapacities.CASTS_CONTAINER_DEFAULT_CAPACITY;
 
 @Internal

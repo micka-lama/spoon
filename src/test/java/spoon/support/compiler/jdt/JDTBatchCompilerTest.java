@@ -16,9 +16,10 @@
  */
 package spoon.support.compiler.jdt;
 
-import java.io.File;
 import org.junit.jupiter.api.Test;
+
 import spoon.Launcher;
+import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

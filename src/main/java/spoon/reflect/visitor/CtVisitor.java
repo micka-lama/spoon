@@ -8,6 +8,7 @@
 package spoon.reflect.visitor;
 
 import java.lang.annotation.Annotation;
+
 import spoon.reflect.code.CtAnnotationFieldAccess;
 import spoon.reflect.code.CtArrayRead;
 import spoon.reflect.code.CtArrayWrite;

@@ -8,6 +8,7 @@
 package spoon.metamodel;
 
 import java.util.function.Predicate;
+
 import spoon.SpoonException;
 import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;

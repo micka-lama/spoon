@@ -7,10 +7,11 @@
  */
 package spoon.support.visitor.java.internal;
 
-import java.lang.annotation.Annotation;
 import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtTypeReference;
+
+import java.lang.annotation.Annotation;
 
 public class AnnotationRuntimeBuilderContext extends AbstractRuntimeBuilderContext {
 	private CtAnnotation<Annotation> ctAnnotation;

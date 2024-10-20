@@ -19,6 +19,7 @@ package spoon.reflect.visitor;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+
 import org.junit.jupiter.api.Test;
 import spoon.Launcher;
 import spoon.reflect.declaration.CtElement;

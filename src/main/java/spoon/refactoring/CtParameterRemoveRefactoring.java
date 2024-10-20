@@ -10,6 +10,7 @@ package spoon.refactoring;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import spoon.SpoonException;
 import spoon.reflect.code.CtAnnotationFieldAccess;
 import spoon.reflect.code.CtArrayRead;

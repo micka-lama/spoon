@@ -17,6 +17,7 @@
 package spoon.test.processing.processors;
 
 import java.util.Date;
+
 import spoon.processing.AbstractProcessor;
 import spoon.reflect.cu.CompilationUnit;
 import spoon.reflect.declaration.CtClass;

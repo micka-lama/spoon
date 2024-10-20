@@ -19,7 +19,9 @@ package spoon.test.api;
 
 import java.io.File;
 import java.util.List;
+
 import org.junit.jupiter.api.Test;
+
 import spoon.Launcher;
 import spoon.reflect.CtModel;
 import spoon.reflect.code.CtConstructorCall;
@@ -28,6 +30,7 @@ import spoon.reflect.code.CtInvocation;
 import spoon.reflect.code.CtLocalVariable;
 import spoon.reflect.code.CtReturn;
 import spoon.reflect.declaration.CtClass;
+import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
@@ -41,6 +44,7 @@ import spoon.test.api.testclasses.Bar;
 import spoon.testing.assertions.SpoonAssertions;
 import spoon.testing.utils.ModelTest;
 
+import static java.util.function.Predicate.not;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

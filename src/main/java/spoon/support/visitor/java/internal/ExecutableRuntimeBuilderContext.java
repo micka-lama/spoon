@@ -7,11 +7,6 @@
  */
 package spoon.support.visitor.java.internal;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Executable;
-import java.lang.reflect.GenericDeclaration;
-import java.util.HashMap;
-import java.util.Map;
 import org.jspecify.annotations.Nullable;
 import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtConstructor;
@@ -22,6 +17,12 @@ import spoon.reflect.declaration.CtParameter;
 import spoon.reflect.declaration.CtTypeParameter;
 import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtTypeReference;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Executable;
+import java.lang.reflect.GenericDeclaration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExecutableRuntimeBuilderContext extends AbstractRuntimeBuilderContext {
 	private CtExecutable<?> ctExecutable;

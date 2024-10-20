@@ -14,6 +14,7 @@
  */
 package spoon.javadoc.internal;
 
+import static spoon.javadoc.internal.JavadocInlineTag.nextWord;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collections;
@@ -23,8 +24,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.tuple.Pair;
 import spoon.reflect.code.CtComment;
-
-import static spoon.javadoc.internal.JavadocInlineTag.nextWord;
 
 /**
  * The structured content of a single Javadoc comment.

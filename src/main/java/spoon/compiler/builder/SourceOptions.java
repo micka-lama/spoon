@@ -7,13 +7,14 @@
  */
 package spoon.compiler.builder;
 
+import spoon.compiler.SpoonFile;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
-import spoon.compiler.SpoonFile;
 
 public class SourceOptions<T extends SourceOptions<T>> extends Options<T> {
 	public SourceOptions() {

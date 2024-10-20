@@ -7,10 +7,6 @@
  */
 package spoon.reflect.path;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 import spoon.reflect.CtModelImpl;
 import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.declaration.CtElement;
@@ -22,6 +18,11 @@ import spoon.reflect.path.impl.CtPathElement;
 import spoon.reflect.path.impl.CtPathImpl;
 import spoon.reflect.path.impl.CtRolePathElement;
 import spoon.reflect.reference.CtReference;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * This builder allow to create some CtPath from CtElements

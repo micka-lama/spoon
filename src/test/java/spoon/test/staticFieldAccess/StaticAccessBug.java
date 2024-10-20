@@ -1,7 +1,8 @@
 package spoon.test.staticFieldAccess;
 
-import java.util.concurrent.Callable;
 import spoon.test.staticFieldAccess.internal.Extends;
+
+import java.util.concurrent.Callable;
 
 /**
  * Created by nicolas on 05/09/2014.

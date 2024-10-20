@@ -7,11 +7,6 @@
  */
 package spoon.compiler;
 
-import java.io.File;
-import java.nio.charset.Charset;
-import java.util.List;
-import java.util.function.Supplier;
-import org.jspecify.annotations.Nullable;
 import spoon.OutputType;
 import spoon.compiler.builder.EncodingProvider;
 import spoon.processing.FileGenerator;
@@ -27,6 +22,13 @@ import spoon.support.OutputDestinationHandler;
 import spoon.support.compiler.SpoonProgress;
 import spoon.support.modelobs.FineModelChangeListener;
 import spoon.support.sniper.SniperJavaPrettyPrinter;
+
+import java.io.File;
+import java.nio.charset.Charset;
+import java.util.List;
+import java.util.function.Supplier;
+
+import org.jspecify.annotations.Nullable;
 
 /**
  * This interface represents the environment in which Spoon is launched -

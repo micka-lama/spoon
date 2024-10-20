@@ -7,11 +7,12 @@
  */
 package spoon.reflect.code;
 
-import java.util.List;
 import spoon.javadoc.internal.JavadocDescriptionElement;
+import spoon.support.DerivedProperty;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
-import spoon.support.DerivedProperty;
+
+import java.util.List;
 
 import static spoon.reflect.path.CtRole.COMMENT_TAG;
 

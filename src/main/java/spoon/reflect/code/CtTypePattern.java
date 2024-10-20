@@ -7,11 +7,12 @@
  */
 package spoon.reflect.code;
 
-import java.util.List;
 import spoon.reflect.annotations.PropertyGetter;
 import spoon.reflect.annotations.PropertySetter;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.UnsettableProperty;
+
+import java.util.List;
 
 import static spoon.reflect.path.CtRole.VARIABLE;
 

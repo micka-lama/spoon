@@ -16,11 +16,6 @@
  */
 package spoon.test.methodreference;
 
-import java.io.File;
-import java.lang.reflect.Method;
-import java.util.Comparator;
-import java.util.List;
-import java.util.function.Supplier;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spoon.Launcher;
@@ -48,6 +43,12 @@ import spoon.test.methodreference.testclasses.AssertJ;
 import spoon.test.methodreference.testclasses.Cloud;
 import spoon.test.methodreference.testclasses.Foo;
 import spoon.testing.utils.ModelUtils;
+
+import java.io.File;
+import java.lang.reflect.Method;
+import java.util.Comparator;
+import java.util.List;
+import java.util.function.Supplier;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -226,7 +227,7 @@ public class MethodReferenceTest {
 		assertNotNull(toStringMethod.getAnnotation(overrideRef));
 		assertNotNull(toStringMethod.getReference().getOverridingExecutable());
 	}
-
+	
 	@Test
 	public void testGetGenericMethodFromReference() throws Exception {
 		CtType<?> classCloud = ModelUtils.buildClass(Cloud.class);
@@ -246,7 +247,7 @@ public class MethodReferenceTest {
 		assertNotNull(method2);
 		assertEquals("method", method2.getName());
 	}
-
+	
 	@Test
 	public void testGetGenericExecutableReference() throws Exception {
 		CtType<?> classCloud = ModelUtils.buildClass(Cloud.class);
