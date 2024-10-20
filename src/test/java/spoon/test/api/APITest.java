@@ -30,7 +30,6 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
@@ -180,7 +179,7 @@ public class APITest {
 			String invalidEntry = "does/not/exists//Foo.java";
 			Launcher.main(new String[]{ "-i", invalidEntry, "-o", "target/spooned/apitest" });
 		});
-	} 
+	}
 
 	@Test
 	public void testAddProcessorMethodInSpoonAPI() {

@@ -16,15 +16,16 @@
  */
 package spoon.test.logging;
 
+import java.util.List;
+import java.util.stream.Stream;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import spoon.FluentLauncher;
 import spoon.Launcher;
 import spoon.MavenLauncher;
 import spoon.processing.AbstractProcessor;
-import spoon.reflect.CtModel;
 import spoon.reflect.code.CtInvocation;
 import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.visitor.Query;
@@ -34,8 +35,7 @@ import spoon.support.Level;
 import spoon.testing.utils.GitHubIssue;
 import uk.org.lidalia.slf4jtest.TestLogger;
 import uk.org.lidalia.slf4jtest.TestLoggerFactory;
-import java.util.List;
-import java.util.stream.Stream;
+
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -123,10 +123,10 @@ public class LogTest {
 				// do nothing
 			}
 			public boolean isToBeProcessed(CtConstructor<?> candidate) {
-        			List<CtInvocation<?>> invocations = Query.getElements(candidate, new TypeFilter<>(CtInvocation.class));
-        			invocations.forEach(i -> getEnvironment().report(this, Level.INFO, i, "Message"));
-       				return false;
-	  		}};
+					List<CtInvocation<?>> invocations = Query.getElements(candidate, new TypeFilter<>(CtInvocation.class));
+					invocations.forEach(i -> getEnvironment().report(this, Level.INFO, i, "Message"));
+					return false;
+			}};
 		assertDoesNotThrow(() -> new FluentLauncher().inputResource(codePath).processor(processor).buildModel());
 	}
 }
